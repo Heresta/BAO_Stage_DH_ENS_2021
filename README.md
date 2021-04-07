@@ -1,1 +1,1 @@
-# Projet_DH_imprimeurs
+# Projet d'identification des imprimeurs pour l’imprimé ancien
