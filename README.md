@@ -1,1 +1,1 @@
-# Projet d'identification des imprimeurs pour l’imprimé ancien
+# Repository commun pour le stage à l'ENS de Paris
