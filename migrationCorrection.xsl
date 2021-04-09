@@ -8,10 +8,12 @@
     <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
     
     <xsl:template match="pr:PcGts">
+        <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
         <xsl:copy>
             <xsl:copy-of select="pr:Metadata"/>
             <xsl:apply-templates select="pr:Page"/>
         </xsl:copy>
+        </PcGts>
     </xsl:template>
     
     <xsl:template match="pr:Page">
