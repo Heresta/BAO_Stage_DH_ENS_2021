@@ -24,9 +24,11 @@
     
     <xsl:template match="pr:TextRegion">
         <xsl:element name="TextRegion">
+            <xsl:if test="@type">
             <xsl:attribute name="type">
                 <xsl:value-of select="@type"/>
             </xsl:attribute>
+            </xsl:if>
             <xsl:attribute name="id">
                 <xsl:value-of select="@id"/>
             </xsl:attribute>
@@ -38,9 +40,11 @@
                 <xsl:attribute name="id">
                     <xsl:value-of select="pr:TextLine/@id"/>
                 </xsl:attribute>
+                <xsl:if test="@primaryLanguage">
                 <xsl:attribute name="primaryLanguage">
                     <xsl:value-of select="pr:TextLine/@primaryLanguage"/>
                 </xsl:attribute>
+                </xsl:if>
                 <xsl:attribute name="custom">
                     <xsl:value-of select="pr:TextLine/@custom"/>
                 </xsl:attribute>
