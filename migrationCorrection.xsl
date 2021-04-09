@@ -47,6 +47,9 @@
                 <xsl:copy-of select="pr:TextLine/pr:Coords"/>
                 <xsl:copy-of select="pr:TextLine/pr:Baseline"/>
                 <xsl:element name="Word">
+                    <xsl:attribute name="custom">
+                        <xsl:text>readingOrder {index:0;}</xsl:text>
+                    </xsl:attribute>
                     <xsl:element name="Coords">
                         <xsl:attribute name="points">
                             <xsl:value-of select="pr:TextLine/pr:Coords/@points"/>
