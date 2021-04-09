@@ -3,25 +3,22 @@ import os
 import click
 import re
 from lxml import etree as ET
-from bs4 import BeautifulSoup
-
+import errno
 #récupérer le dossier à transformer
-#chemin = input("entrez le chemin du dossier: ")
-path = './Balzac1624_Lettres_btv1b86262420_corrected_0011.xml'
+chemin = input("entrez le chemin du dossier: ")
+dossier_resultat = input("entrez le chemin du dossier résultat: ")
+if not os.path.exists(os.path.dirname(dossier_resultat)):
+    try:
+        os.makedirs(os.path.dirname(dossier_resultat))
+    except OSError as exc:  # Guard against race condition
+        if exc.errno != errno.EEXIST:
+            raise
+for fichier in os.listdir(chemin):
+    original = ET.parse(fichier)
 
-original = ET.parse(path)
+    transformation_xlst = ET.XSLT(ET.parse("./transformation_xml_corrige_escriptorium.xsl"))
 
-transformation_xlst = ET.XSLT(ET.parse("./transformation_xml_corrige_escriptorium.xsl"))
+    propre = transformation_xlst(original)
 
-propre = transformation_xlst(original)
-
-with open('final.xml', mode='wb') as f:
-    f.write(propre)
-
-
-#parser la feuille de transformation
-
-
-#lancer la feuille sur les différents fichiers du dossier
-
-#faire la version en CLI
+    with open('./nettoyage/'+fichier, mode='wb') as f:
+        f.write(propre)
