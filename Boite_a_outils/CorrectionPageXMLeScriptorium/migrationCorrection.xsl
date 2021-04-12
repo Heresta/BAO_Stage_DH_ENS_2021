@@ -30,6 +30,8 @@
             <xsl:copy-of select="pr:PrintSpace"/>
             <xsl:copy-of select="pr:ReadingOrder"/>
             <xsl:apply-templates select="pr:TextRegion"/>
+            <xsl:copy-of select="pr:GraphicRegion"/>
+            <xsl:copy-of select="pr:SeparatorRegion"/>
         </xsl:element>
     </xsl:template>
     
@@ -63,6 +65,9 @@
             <xsl:copy-of select="pr:Coords"/>
             <xsl:copy-of select="pr:Baseline"/>
             <xsl:element name="Word">
+                <xsl:attribute name="id">
+                    <xsl:value-of select="pr:Word/@id"/>
+                </xsl:attribute>
                 <xsl:element name="Coords">
                     <xsl:attribute name="points">
                         <xsl:value-of select="pr:Coords/@points"/>
