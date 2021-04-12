@@ -18,7 +18,7 @@ def nettoyage_automatique(chemin):
     for fichier in os.listdir(chemin):
         original = ET.parse(chemin + fichier)
         original_chaine = ET.tostring(original, encoding="unicode")
-    nettoyage = original_chaine.replace('&lt;b&gt;', '').replace('&lt;/b&gt;', '').replace(
+        nettoyage = original_chaine.replace('&lt;b&gt;', '').replace('&lt;/b&gt;', '').replace(
         '&lt;i&gt;', '').replace('&lt;/i&gt;', '')
 
         #on créé un nouveau fichier dans le dossier résultat
