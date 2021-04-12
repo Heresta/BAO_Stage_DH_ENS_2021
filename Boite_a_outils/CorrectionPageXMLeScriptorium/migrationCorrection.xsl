@@ -30,6 +30,8 @@
             <xsl:copy-of select="pr:PrintSpace"/>
             <xsl:copy-of select="pr:ReadingOrder"/>
             <xsl:apply-templates select="pr:TextRegion"/>
+            <xsl:copy-of select="pr:GraphicRegion"/>
+            <xsl:copy-of select="pr:SeparatorRegion"/>
         </xsl:element>
     </xsl:template>
     
