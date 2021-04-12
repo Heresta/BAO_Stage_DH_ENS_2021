@@ -5,7 +5,18 @@ import re
 from lxml import etree as ET
 import errno
 
-def nettoyage_automatique(chemin, dossier_resultat):
+def transformation_automatique(chemin, dossier_resultat):
+    """
+    Fonction permettant, pour chaque fichier d'un dossier donné, de lui appliquer la feuille de transformation
+    migrationCorrection.xsl qui insère les éléments contenus dans //textLine//textEquiv dans //textLine//textWord//text
+    Equiv dans le but d'avoir une version corrigée des transcriptions affichée dans eScriptorium.
+    :param chemin: chaîne de caractères correspondant au chemin relatif du dossier contenant les fichiers à transformer
+    :type chemin: str
+    :param dossier_resultat:chaîne de caractères correspondant au chemin relatif du dossier devant contenir l'output
+    :type dossier_resultat: str
+    :return: fichier pageXML contenant une version corrigée de l'input
+    :return: file
+    """
     # si le dossier résultat n'existe pas, on le créé, sinon, on ne fait rien
     if not os.path.exists(os.path.dirname(dossier_resultat)):
         try:
@@ -26,4 +37,4 @@ def nettoyage_automatique(chemin, dossier_resultat):
 # récupérer le dossier à transformer et le dossier résultat
 chemin_input = input("entrez le chemin du dossier: ")
 chemin_output = input("entrez le chemin du dossier résultat: ")
-nettoyage_automatique(chemin_input, chemin_output)
+transformation_automatique(chemin_input, chemin_output)
