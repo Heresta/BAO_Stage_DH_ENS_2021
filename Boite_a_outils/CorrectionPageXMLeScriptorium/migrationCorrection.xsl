@@ -65,6 +65,9 @@
             <xsl:copy-of select="pr:Coords"/>
             <xsl:copy-of select="pr:Baseline"/>
             <xsl:element name="Word">
+                <xsl:attribute name="id">
+                    <xsl:value-of select="pr:Word/@id"/>
+                </xsl:attribute>
                 <xsl:element name="Coords">
                     <xsl:attribute name="points">
                         <xsl:value-of select="pr:Coords/@points"/>
