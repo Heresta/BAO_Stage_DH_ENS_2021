@@ -8,7 +8,8 @@ les fichiers xml à modifier, puis le nom du dossier de sortie de cette transfor
 
 ``corrige.xml`` est un exemple de fichier de sortie que donne le document de transformation xsl.
 
-``depart.xml`` est le fichier duquel par l'exemple de sortie.
+``depart.xml`` est le fichier duquel par l'exemple de sortie. Celui-ci est issu des <i>Lettres</i> d'Honoré de Balzac publié en 1624. IL est possible de retrouver 
+un exemplaire de ce livre en cliquant sur le lien suivant : https://gallica.bnf.fr/ark:/12148/btv1b86262420/f9.item.
 
 ``migrationCorrection.xsl`` est le fichier de transformation xsl.
 
