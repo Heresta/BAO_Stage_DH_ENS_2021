@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Description d'un document PageXML selon la documentation: https://github.com/PRImA-Research-Lab/PAGE-XML/blob/master/PAGE-release/gts/pagecontent/2009-03-16/pagecontent.xsd-->
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <!--Metadata intégrant les données sur le document: créateur, date de
+            création, date de la dernière modification et commentaires-->
+        <Creator>Transkribus</Creator>
+        <Created>2019-11-28T15:07:37.583+01:00</Created>
+        <LastChange>2020-04-03T14:06:54.589+02:00</LastChange>
+        <Comments>
+            Measurement unit: pixel
+            PrimaryLanguage: English
+            Language: FrenchStandard
+            Producer: Transkribus
+        </Comments>
+        <TranskribusMetadata docId="361691" pageId="14061559" pageNr="8" tsid="26956060" status="DONE" userId="54506" imgUrl="https://files.transkribus.eu/Get?id=TXCAEAANIBGABYJBKQLQMPEV&amp;fileType=view" xmlUrl="https://files.transkribus.eu/Get?id=ZEOMABZQGTQSZXUECPBORXII" imageId="6554697"/>
+    </Metadata>
+    <Page imageFilename="1845_05_14_CHA_typo_0008.jpg" imageWidth="5866" imageHeight="9233">
+        <!--La balise Page contient la structure entière de la page
+            ses attributs donne le nom de l'image décrite et sa taille-->
+        <PrintSpace>
+            <!--donne les coordonnées de la page-->
+            <Coords points="97,-34 5963,-34 5963,9199 97,9199"/>
+        </PrintSpace>
+        <ReadingOrder>
+            <!--Ordre de lecture sous la forme d'un index associé à l'identifiant des différentes régions sous la forme d'un pointeur-->
+            <OrderedGroup id="ro_1604246200038" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="r_1_1"/>
+                <!-- [...]-->
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion type="paragraph" id="r_1_1" custom="readingOrder {index:0;}">
+            <!--TextRegion décrit une zone large, groupement de plusieurs lignes
+                elle a un type, un identifiant et un attribut custom, signale sa place 
+                dans l'index de lecture-->
+            <Coords points="1849,726 4150,726 4150,1037 1849,1037"/>
+            <!--Coordonnées sous la forme x1,y1 de la région dans la page-->
+            <TextLine id="tl_1" primaryLanguage="English" custom="readingOrder {index:0;}">
+                <!--TextLine décrit une portion de la page avec du texte
+                    Elle a un identifiant, une langue principale (ici anglais étrangement) 
+                    et un ordre de lecture selon l'index établi précédemment-->
+                <Coords points="1850,727 4149,727 4149,1036 1850,1036"/>
+                <Baseline points="1851,951 4149,1036"/>
+                <!--Coordonnées de la zone line et de baseline, qui correspond à la ligne de base sous le texte-->
+                <Word id="w_w2aab1b1b2b1b1ab1" language="English" custom="readingOrder {index:0;}">
+                    <!--Word décrit un mot en particulier dans la ligne
+                        Il a un identifiant, un langage (ici encore Anglais étrangement)
+                        et un ordre de lecture dans l'index-->
+                    <Coords points="1851,727 4149,727 4149,1036 1851,1036"/>
+                    <!--Coordonnées du mot-->
+                    <TextEquiv>
+                        <Unicode>(Gâ’TM.iGMEüm</Unicode>
+                        <!--Mot transcrit par Transkribus-->
+                    </TextEquiv>
+                    <TextStyle fontFamily="Times New Roman" fontSize="27.0"/>
+                    <!--Informations sur le style du mot: police et taille-->
+                </Word>
+                <TextEquiv>
+                    <!-- texte corrigé à la main de la transcription dans la balise Word, situé dans le TextLine-->
+                    <Unicode>CATALOGUE</Unicode>
+                </TextEquiv>
+                <TextStyle fontFamily="Times New Roman" fontSize="27.0"/>
+            </TextLine>
+            <TextEquiv>
+                <!--texte corrigé à la main de la transcription dans la balise Word, situé dans le TextRegion-->
+                <Unicode>CATALOGUE</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <!--[...]-->
+        <!--Détail sur les lignes qui séparant un élément d'un autre, avec identifiant, ordre de lecture et coordonnées-->
+        <SeparatorRegion id="r_4" custom="readingOrder {index:15;}">
+            <Coords points="4604,0 5084,0 5084,12 4604,12"/>
+        </SeparatorRegion>
+        <!--[...]-->
+    </Page>
+</PcGts>

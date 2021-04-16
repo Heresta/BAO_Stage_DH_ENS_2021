@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <!--racine (pc pour Processing, Gts= Ground Thruth Structure + namespaces-->    
+    <Metadata>
+        <Creator>escriptorium</Creator>
+        <Created>2021-04-16T12:04:45.680381+00:00</Created>
+        <LastChange>2021-04-16T12:04:45.680402+00:00</LastChange>
+    </Metadata>
+    <!--Metadata: nom de l'auteur (ici escriptorium), date de création et de la dernière modiciation-->
+    <Page imageFilename="1845_05_14_CHA_typo_0012.jpg" imageWidth="5866" imageHeight="9133">
+        <!-- Element Page contenant la structure de la page
+    attribut: Nom de l'image décrite dans le fichier et de sa taille-->
+        
+        <TextRegion id="r_1_1"  custom="structure {type:Title;}">
+            <!-- TextRegion décrit une zone  large de la page
+           Attribut custom: correspond ici au tag ajouté pour décrire la région, en se basant sur l'ontology SegmOnto-->
+            <Coords points="1887,1021 4086,1021 4086,1281 1887,1281"/>
+            <!-- Coordonnées: situent, sous une forme "x1,y1 x2,y2...", l'espace occupé par la région décrite dans la page-->
+            
+            <TextLine id="tl_1" custom="structure {type:default;}">
+                <!--Signale l'alignement des mots suivants-->
+                <Coords points="1881,1232 1896,1134 2018,1141 2178,1027 2224,1027 2338,1141 2422,1149 2552,1149 2673,1027 2773,1065 2841,1027 2963,1027 3009,1073 3138,1027 3275,1035 3329,1088 3405,1027 3710,1027 3809,1042 3938,1172 4068,1172 4083,1271 4060,1324 3930,1324 3877,1278 3771,1278 3740,1309 3664,1271 3557,1271 3466,1316 3390,1271 3192,1263 3077,1263 3032,1309 2986,1263 2902,1309 2856,1278 2757,1301 2673,1255 2544,1255 2491,1301 2247,1248 2171,1293 2003,1293 1957,1263 1889,1286"/>
+                <Baseline points="1888,1234 2437,1244 2933,1252 4084,1272"/>
+                <!--Successions de points dans Coords pour décrire l'alignement des éléments de la ligne
+            Baseline = Polygone final décrivant la ligne-->
+                <TextEquiv>
+                    <Unicode>CATALOGUE</Unicode>
+                    <!--Texte transcrit de la zone-->
+                </TextEquiv>
+            </TextLine>
+        </TextRegion>
+        
+            <!--[...]-->
+        <TextRegion id="r_3_14"  custom="structure {type:numbering;}">
+            <!--Exemple de region signalée comme pagination d'après SegmOnto-->
+            <Coords points="4183,7466 4227,7466 4227,7565 4183,7565"/>            
+            <TextLine id="tl_34" >
+                <Coords points="4184,7467 4226,7467 4226,7564 4184,7564"/>
+                <Baseline points="4184,7564 4226,7564"/>
+                <TextEquiv>
+                    <Unicode>1</Unicode>
+                </TextEquiv>
+            </TextLine>    
+        </TextRegion>
+        
+        <TextRegion id="eSc_textblock_0e80bcdd"  custom="structure {type:Main;}">
+            <Coords points="1034,3896 1034,7764 4917,7764 4917,3896"/>        
+        </TextRegion>
+        <!--La zone main selon la structure établie par SegmOnto doit ici être rajoutée à la main et contient le texte et la pagination. 
+      Il est donc situé à la fin du document-->
+        
+    </Page>
+</PcGts>       
