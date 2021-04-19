@@ -24,7 +24,7 @@
     <Layout>
         <!--Englobe tout les éléments sur la page-->
         <Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="2209" WIDTH="1074">
-            <!-- Identifiant de la page, nombre d'image, taille (largeur et longueur)-->
+            <!-- Identifiant de la page, nombre d'images, taille (largeur et longueur)-->
             <TopMargin HEIGHT="0" WIDTH="1074" VPOS="0" HPOS="0"/>
             <LeftMargin HEIGHT="2209" WIDTH="0" VPOS="0" HPOS="0"/>
             <RightMargin HEIGHT="2209" WIDTH="0" VPOS="0" HPOS="1074"/>
