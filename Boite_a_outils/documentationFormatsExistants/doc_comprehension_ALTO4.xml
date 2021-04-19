@@ -12,7 +12,7 @@
     <sourceImageInformation>
       <fileName>8_8e7a8_default.jpg</fileName>
     </sourceImageInformation>
-    <!-- dans cette balise devraient apparaitre les informations sur le document, récupérées sur le manifest IIIF, du moins concernant la page encodée -->
+    <!-- dans cette balise devraient apparaitre les informations sur le document, récupérées sur le manifest IIIF, du moins concernant la page encodée, mais ce n'est pas le cas -->
   </Description>
   
   <Tags>
@@ -67,7 +67,7 @@
                     VPOS="2277"
                     WIDTH="262"
                     HEIGHT="284"></String>
-            <!-- String donne les coordonnés de la lettre ou du/des mot(s) qui se trouve sur la ligne entière -->
+            <!-- String donne les coordonnés de la lettre ou du/des mot(s) qui se trouve(nt) sur la ligne entière -->
           </TextLine>
      </PrintSpace>
     </Page>
