@@ -6,13 +6,13 @@
         <Created>2021-04-16T12:04:45.680381+00:00</Created>
         <LastChange>2021-04-16T12:04:45.680402+00:00</LastChange>
     </Metadata>
-    <!--Metadata: nom de l'auteur (ici escriptorium), date de création et de la dernière modiciation-->
+    <!--Metadata: nom de l'auteur (ici escriptorium), date de création et de la dernière modification-->
     <Page imageFilename="1845_05_14_CHA_typo_0012.jpg" imageWidth="5866" imageHeight="9133">
         <!-- Element Page contenant la structure de la page
     attribut: Nom de l'image décrite dans le fichier et de sa taille-->
         
         <TextRegion id="r_1_1"  custom="structure {type:Title;}">
-            <!-- TextRegion décrit une zone  large de la page
+            <!-- TextRegion décrit une zone large de la page
            Attribut custom: correspond ici au tag ajouté pour décrire la région, en se basant sur l'ontology SegmOnto-->
             <Coords points="1887,1021 4086,1021 4086,1281 1887,1281"/>
             <!-- Coordonnées: situent, sous une forme "x1,y1 x2,y2...", l'espace occupé par la région décrite dans la page-->
