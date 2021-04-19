@@ -17,7 +17,7 @@
     </Metadata>
     <Page imageFilename="1845_05_14_CHA_typo_0008.jpg" imageWidth="5866" imageHeight="9233">
         <!--La balise Page contient la structure entière de la page
-            ses attributs donne le nom de l'image décrite et sa taille-->
+            ses attributs donnent le nom de l'image décrite et sa taille-->
         <PrintSpace>
             <!--donne les coordonnées de la page-->
             <Coords points="97,-34 5963,-34 5963,9199 97,9199"/>
@@ -67,7 +67,7 @@
             </TextEquiv>
         </TextRegion>
         <!--[...]-->
-        <!--Détail sur les lignes qui séparant un élément d'un autre, avec identifiant, ordre de lecture et coordonnées-->
+        <!--Détail sur les lignes qui séparent un élément d'un autre, avec identifiant, ordre de lecture et coordonnées-->
         <SeparatorRegion id="r_4" custom="readingOrder {index:15;}">
             <Coords points="4604,0 5084,0 5084,12 4604,12"/>
         </SeparatorRegion>
