@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+   Exemple de format ALTO2 
+   Documentation: https://github.com/altoxml/documentation/blob/master/v2/ALTO_changes_2_1.pdf
+-->
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.loc.gov/standards/alto/ns-v2#"
+    xmlns:page="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15"
+    xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto.xsd">
+    <!--Balise racine et namespaces-->
+    <Description>
+        <!--Informations sur les fichiers et le processus de réalisation du document-->
+        <MeasurementUnit>pixel</MeasurementUnit>
+        <OCRProcessing ID="IdOcr">
+            <ocrProcessingStep>
+                <processingDateTime>2020-11-01T14:47:50.282+01:00</processingDateTime>
+                <processingSoftware>
+                    <softwareCreator>READ COOP</softwareCreator>
+                    <softwareName>Transkribus</softwareName>
+                </processingSoftware>
+            </ocrProcessingStep>
+        </OCRProcessing>
+    </Description>
+    <Layout>
+        <!--Englobe tout les éléments sur la page-->
+        <Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="2209" WIDTH="1074">
+            <!-- Identifiant de la page, nombre d'images, taille (largeur et longueur)-->
+            <TopMargin HEIGHT="0" WIDTH="1074" VPOS="0" HPOS="0"/>
+            <LeftMargin HEIGHT="2209" WIDTH="0" VPOS="0" HPOS="0"/>
+            <RightMargin HEIGHT="2209" WIDTH="0" VPOS="0" HPOS="1074"/>
+            <BottomMargin HEIGHT="0" WIDTH="1074" VPOS="2209" HPOS="0"/>
+            <PrintSpace HEIGHT="2209" WIDTH="1074" VPOS="0" HPOS="0">
+                <!--Taille de l'imprimé = taille de la page-->
+                <TextBlock ID="r_1_1" HEIGHT="103" WIDTH="933" VPOS="1" HPOS="43">
+                    <!--Un TextBlock correspond à ce que SegmOnto appelle une région
+                   Chaque TextBlock a un identifiant précis, une taille (largeur et longueur) et 
+                   des coordonnées x,y pour la situer dans la page selon un repère orthonormé.-->
+                    <Shape>
+                        <Polygon POINTS="43,1 976,1 976,104 43,104"/>
+                        <!--Shape donne les coordonnées de la forme de la TextRegion-->
+                    </Shape>
+                    
+                    <TextLine ID="tl_1"
+                        BASELINE="114"
+                        HEIGHT="115"
+                        WIDTH="945"
+                        VPOS="-1"
+                        HPOS="36">
+                        <!--TextLine correspond à une portion de la zone avec du texte
+                      Comme TextRegion elle a un identifiant, une taille (largeur et longueur), 
+                      des coordonnées et une coordonnée de la ligne correspondant à la base du
+                      texte (baseline)-->
+                        <String ID="string_tl_1"
+                            HEIGHT="115"
+                            WIDTH="945"
+                            VPOS="-1"
+                            HPOS="36"
+                            CONTENT="&lt;b&gt;LIBRAIRIE ANCIENNE&lt;/b&gt;"/>
+                        <!--String correspond à la ligne de texte 
+                      la balise a un identifiant, une taille, des coordonnées (similaires à celle de
+                      TextLine) et un contenu correspondant à la transcription--> 
+                        
+                        <!--[...]-->
+                        
+                    </TextLine>
+                </TextBlock>
+            </PrintSpace>
+        </Page>
+    </Layout>
+</alto>

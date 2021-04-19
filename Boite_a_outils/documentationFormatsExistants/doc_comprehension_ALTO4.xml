@@ -1,0 +1,75 @@
+<!--Exemple avec définition des éléments-->
+<!--Lien vers documentation : https://www.loc.gov/standards/alto/v4/alto.xsd-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- version de xml + encodage choisi -->
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# https://gitlab.inria.fr/scripta/escriptorium/-/raw/develop/app/escriptorium/static/alto-4-1-baselines.xsd">
+  <!-- balise root avec les namespaces associés -->
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>8_8e7a8_default.jpg</fileName>
+    </sourceImageInformation>
+    <!-- dans cette balise devraient apparaitre les informations sur le document, récupérées sur le manifest IIIF, du moins concernant la page encodée, mais ce n'est pas le cas -->
+  </Description>
+  
+  <Tags>
+    <OtherTag ID="BT1" LABEL="Title" DESCRIPTION="block type Title"/><OtherTag ID="BT2" LABEL="Main" DESCRIPTION="block type Main"/><OtherTag ID="BT81" LABEL="Damage" DESCRIPTION="block type Damage"/><OtherTag ID="BT82" LABEL="Decoration" DESCRIPTION="block type Decoration"/><OtherTag ID="BT83" LABEL="DropCapital" DESCRIPTION="block type DropCapital"/><OtherTag ID="BT84" LABEL="Figure" DESCRIPTION="block type Figure"/><OtherTag ID="BT85" LABEL="Margin" DESCRIPTION="block type Margin"/><OtherTag ID="BT86" LABEL="MusicNotation" DESCRIPTION="block type MusicNotation"/><OtherTag ID="BT87" LABEL="Numbering" DESCRIPTION="block type Numbering"/><OtherTag ID="BT88" LABEL="RunningTitle" DESCRIPTION="block type RunningTitle"/><OtherTag ID="BT89" LABEL="Seal" DESCRIPTION="block type Seal"/><OtherTag ID="BT90" LABEL="Signatures" DESCRIPTION="block type Signatures"/><OtherTag ID="BT91" LABEL="Stamp" DESCRIPTION="block type Stamp"/><OtherTag ID="BT92" LABEL="Table" DESCRIPTION="block type Table"/>
+    <OtherTag ID="LT42" LABEL="Default" DESCRIPTION="line type Default"/><OtherTag ID="LT43" LABEL="DropCapitalLine" DESCRIPTION="line type DropCapitalLine"/><OtherTag ID="LT44" LABEL="Interlinear" DESCRIPTION="line type Interlinear"/><OtherTag ID="LT45" LABEL="MusicLine" DESCRIPTION="line type MusicLine"/><OtherTag ID="LT46" LABEL="Rubric" DESCRIPTION="line type Rubric"/>
+  </Tags>
+  <!-- Ici, on a les tags ajoutés ou non dans Ontology sur eScriptorium : on leur donne un ID, un label et une description. Dans le cas présent, ce sont ceux de SegmOnto -->
+  
+  <Layout>
+    <!-- Layout englobe toutes les informations sur la page elle-même et son découpage en segments et en lignes -->
+    <!-- Dans l'idée, il serait possible d'avoir plusieurs pages dans un seul document en format ALTO -->
+    <Page WIDTH="1987"
+          HEIGHT="3606"
+          PHYSICAL_IMG_NR="8"
+          ID="eSc_dummypage_">
+      <!-- Informations sur la première page : informations sur la taille de la page en pixels, sa numérotation au sein de toutes les autres images et son ID -->
+      <!-- A noter : WIDTH = largeur et HEIGHT = hauteur -->
+      <PrintSpace HPOS="0"
+                  VPOS="0"
+                  WIDTH="1987"
+                  HEIGHT="3606">
+        <!-- Ici on a les information sur la partie imprimée : en soit ici, ce sont les mêmes que celles de la page -->
+        <!-- A noter : WIDTH = largeur et HEIGHT = hauteur -->
+        <!-- A noter : HPOS = x (abscisse) sur un repère orthonormé  et VPOS = y (ordonnée) sur un repère orthonormé -->
+        <TextBlock HPOS="160"
+                   VPOS="2241"
+                   WIDTH="346"
+                   HEIGHT="373"
+                   ID="eSc_textblock_71f25f12"
+                   TAGREFS="BT83">
+          <!-- Un TextBlock représente une zone/région selon SegmOnto : cette zone est identifiable par le TAGREF qui rappelle ce qu'on trouve dans <Tags> -->
+          <!-- Chaque TextBlock a un ID -->
+          <!-- A noter : WIDTH = largeur et HEIGHT = hauteur -->
+          <!-- A noter : HPOS = x (abscisse) sur un repère orthonormé  et VPOS = y (ordonnée) sur un repère orthonormé -->
+          <Shape><Polygon POINTS="160 2241 160 2395 160 2614 506 2614 506 2241"/></Shape>
+          
+          
+          <TextLine ID="eSc_line_dc9c4697"
+                    TAGREFS="LT42"
+                    BASELINE="203 2551 443 2558" 
+                    HPOS="201"
+                    VPOS="2277"
+                    WIDTH="262"
+                    HEIGHT="284">
+            <!-- TextLine représente une portion de la page avec du texte -->
+            <!-- La balise a plusieurs attributs : ID (identifiant), TAGREFS (référence à la balise <Tags>) et BASELINE (correspond aux coordonnés de la ligne de base du texte) -->
+            <!-- Explication coordonnées BASELINE selon documentation : Pixel coordinates based on the left-hand top corner of an image which define a polyline on which a line of text rests -->
+            <Shape><Polygon POINTS="201 2548 204 2277 463 2277 460 2549 441 2557 408 2557 366 2556 334 2561 292 2555 250 2556 218 2555"/></Shape>
+            <!-- Shape et Polygon : donnent les coordonnées de la forme des lettres de la ligne -->
+	    <String CONTENT="M"
+                    HPOS="201"
+                    VPOS="2277"
+                    WIDTH="262"
+                    HEIGHT="284"></String>
+            <!-- String donne les coordonnés de la lettre ou du/des mot(s) qui se trouve(nt) sur la ligne entière -->
+          </TextLine>
+     </PrintSpace>
+    </Page>
+  </Layout>
+</alto>
