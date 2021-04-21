@@ -36,7 +36,7 @@ Ce fichier est un petit script qui permet de récupérer directement les noms de
 <i>Créé par [@Juliettejns](http://github.com/Juliettejns)</i>
 
 ### Fichier Python - suppressionGrasItalique.py
-Ce fichier est un petit script qui a pour but d'automatiser la suppression des balises <b> et <i> des documents PageXML.
+Ce fichier est un petit script qui a pour but d'automatiser la suppression des balises ``<b>`` et ``<i>`` des documents PageXML.
   
 [Lien vers le fichier ``suppressionGrasItalique.py``](https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/main/suppressionGrasItalique.py)  
   
