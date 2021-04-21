@@ -7,8 +7,6 @@
     version="1.0">
     <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
     
-    
-    
     <xsl:template match="pr:PcGts">
         <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
             <xsl:copy-of select="pr:Metadata"/>
@@ -60,6 +58,8 @@
                 <xsl:value-of select="@primaryLanguage"/>
             </xsl:attribute>
             <xsl:attribute name="custom">
+                <!--Ajout pour toutes les lignes de la valeur default d'après l'ontologie SegmOnto-->
+                <xsl:text>structure {type:default;} </xsl:text>
                 <xsl:value-of select="@custom"/>
             </xsl:attribute>
             <xsl:copy-of select="pr:Coords"/>
