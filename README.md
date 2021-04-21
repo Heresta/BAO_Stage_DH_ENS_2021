@@ -3,9 +3,9 @@ Cette boite à outils a été créée dans l'optique de donner accès à tous au
 
 ## Sommaire
 ### Dossier - CorrectionPageXMLeScriptorium
-Ce dossier contient un script Python ainsi qu'une feuille de transformation xsl qui ont pour but de normaliser des fichiers PAGE-XML afin de pouvoir les utiliser sans soucis dans l'application eScriptorium. [En savoir plus (README)](https://github.com/Heresta/Stage_DH_ENS_2021/blob/main/CorrectionPageXMLeScriptorium/README.md)
+Ce dossier contient un script Python ainsi qu'une feuille de transformation xsl qui ont pour but de normaliser des fichiers PAGE-XML afin de pouvoir les utiliser sans soucis dans l'application eScriptorium. [En savoir plus (README)](https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/main/CorrectionPageXMLeScriptorium/README.md)
 
-[Lien vers le dossier](https://github.com/Heresta/Stage_DH_ENS_2021/tree/main/CorrectionPageXMLeScriptorium)
+[Lien vers le dossier ``CorrectionPageXMLeScriptorium``](https://github.com/Heresta/BAO_Stage_DH_ENS_2021/tree/main/CorrectionPageXMLeScriptorium)
 
 <i>Créé par [@Heresta](http://github.com/Heresta) et [@Juliettejns](http://github.com/Juliettejns)</i>
 
@@ -24,21 +24,21 @@ Ce dossier contient quatre fichiers xml commentés en français en fonction de l
   </ul>
 </ul>
 
-[Lien vers le dossier](https://github.com/Heresta/Stage_DH_ENS_2021/tree/main/documentationFormatsExistants)
+[Lien vers le dossier ``documentationFormatsExistants``](https://github.com/Heresta/BAO_Stage_DH_ENS_2021/tree/main/documentationFormatsExistants)
 
 <i>Créé par [@Heresta](http://github.com/Heresta) et [@Juliettejns](http://github.com/Juliettejns)</i>
 
-### Fichier Python - creationCSVDataset.pyhttps://github.com/Heresta/Stage_DH_ENS_2021/blob/main/creationCSVDataset.py
+### Fichier Python - creationCSVDataset.py
 Ce fichier est un petit script qui permet de récupérer directement les noms des fichiers dans d'un dossier de dataset dans un fichier csv.
 
-[Lien vers le fichier](https://github.com/Heresta/Stage_DH_ENS_2021/blob/main/creationCSVDataset.py)
+[Lien vers le fichier ``creationCSVDataset.py``](https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/main/creationCSVDataset.py)
 
 <i>Créé par [@Juliettejns](http://github.com/Juliettejns)</i>
 
 ### Fichier Python - suppressionGrasItalique.py
 Ce fichier est un petit script qui a pour but d'automatiser la suppression des balises <b> et <i> des documents PageXML.
   
-[Lien vers le fichier](https://github.com/Heresta/Stage_DH_ENS_2021/blob/main/suppressionGrasItalique.py)  
+[Lien vers le fichier ``suppressionGrasItalique.py``](https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/main/suppressionGrasItalique.py)  
   
 <i>Créé par [@Juliettejns](http://github.com/Juliettejns)</i>
 
