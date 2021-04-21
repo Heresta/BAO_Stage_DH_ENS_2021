@@ -1,3 +1,9 @@
+"""
+Programme permettant de récupérer les noms des fichiers d'un dossier en d'en faire un csv 
+afin de créer rapidement un csv de suivi de construction d'un dataset
+Auteur: Juliette Janes  
+Date: 18/04/20
+"""
 import os
 import csv
 
