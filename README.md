@@ -22,6 +22,13 @@ Ce dossier contient quatre fichiers xml commentés en français en fonction de l
 
 _Créé par [@Heresta](http://github.com/Heresta) et [@Juliettejns](http://github.com/Juliettejns)_
 
+### Dossier - problemesSegmentation
+Ce dossier contient un fichier csv ainsi qu'un dossier d'images qui sont pour but de répertorier les problématiques recontrées lors de la segmentation d'imprimés du XVII<sup>e</sup> et du XIX<sup>e</sup> siècle. [En savoir plus (README)](https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/README.md)
+
+[Lien vers le dossier ``problemesSegmentation``](https://github.com/Heresta/BAO_Stage_DH_ENS_2021/tree/Probl%C3%A8mes-segmentation/problemesSegmentation)
+
+_Créé et complété par [@Heresta](http://github.com/Heresta) et [@Juliettejns](http://github.com/Juliettejns)_
+
 ### Fichier Python - creationCSVDataset.py
 Ce fichier est un petit script qui permet de récupérer directement les noms des fichiers dans d'un dossier de dataset dans un fichier csv.
 
