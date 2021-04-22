@@ -1,70 +1,70 @@
 Id,Nom de fichier,Lien vers l’image dans le GitHub,Couleurs : zones,Problème,Notes,Résolution
-1,page_titre_Boyer_Meduse_1697.png,,"Bleu : Title
+1,page_titre_Boyer_Meduse_1697.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/page_titre_Boyer_Meduse_1697.png,"Bleu : Title
 Magenta : Main
 Vert : Stamp
 Bleu ciel : Decoration",Est-ce que toute la page est une zone title?,None,None
-2,page_prologue_Boyer_Meduse_1697.png,,"Orange : Numbering
+2,page_prologue_Boyer_Meduse_1697.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/page_prologue_Boyer_Meduse_1697.png,"Orange : Numbering
 Violet : Figure
 Bleu : Title
 Magenta : Main
 Violet foncé : DropCapital",1. Est-ce que prologue est un title ,None,None
-3,page_prologue_Boyer_Meduse_1697.png,,"Orange : Numbering
+3,page_prologue_Boyer_Meduse_1697.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/page_prologue_Boyer_Meduse_1697.png,"Orange : Numbering
 Violet : Figure
 Bleu : Title
 Magenta : Main
 Violet foncé : DropCapital",2. Est-ce que le paragraphe sous title est aussi un title ,None,None
-4,page_prologue_Boyer_Meduse_1697.png,,"Orange : Numbering
+4,page_prologue_Boyer_Meduse_1697.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/page_prologue_Boyer_Meduse_1697.png,"Orange : Numbering
 Violet : Figure
 Bleu : Title
 Magenta : Main
 Violet foncé : DropCapital",3. Est-ce que TIRCIS (=<sp> ou <stage>) appartiennent à main ,None,None
-5,page_prologue_Boyer_Meduse_1697.png,,"Orange : Numbering
+5,page_prologue_Boyer_Meduse_1697.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/page_prologue_Boyer_Meduse_1697.png,"Orange : Numbering
 Violet : Figure
 Bleu : Title
 Magenta : Main
 Violet foncé : DropCapital",4. Est-ce que les vers doivent être encodé comme une zone verse (en gros = <lg>) ,None,None
-6,page_prologue_Boyer_Meduse_1697.png,,"Orange : Numbering
+6,page_prologue_Boyer_Meduse_1697.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/page_prologue_Boyer_Meduse_1697.png,"Orange : Numbering
 Violet : Figure
 Bleu : Title
 Magenta : Main
 Violet foncé : DropCapital",5. Est-ce que la dropCapital se trouve encastrée dans main(modifié),None,None
-7,page_acteurs_prologue_Boyer_Meduse_1697.png,,"Bleu : Decoration
+7,page_acteurs_prologue_Boyer_Meduse_1697.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/page_%20acteurs_prologue_Boyer_Meduse_1697.png,"Bleu : Decoration
 Bleu : Title
 Magenta : Main
 Violet sous Magenta : DropCapital
 Violet : Figure
 Vert : Stamp",1. la zone main peut-elle contenir d'autres zones? ,None,None
-8,page_acteurs_prologue_Boyer_Meduse_1697.png,,"Bleu : Decoration
+8,page_acteurs_prologue_Boyer_Meduse_1697.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/page_%20acteurs_prologue_Boyer_Meduse_1697.png,"Bleu : Decoration
 Bleu : Title
 Magenta : Main
 Violet sous Magenta : DropCapital
 Violet : Figure
 Vert : Stamp",2. La zone main peut-elle contenir tous les types de zones ou bien uniquement certaines? cf. le cas de dropCapital,None,None
-9,page_acteurs_prologue_Boyer_Meduse_1697.png,,"Bleu : Decoration
+9,page_acteurs_prologue_Boyer_Meduse_1697.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/page_%20acteurs_prologue_Boyer_Meduse_1697.png,"Bleu : Decoration
 Bleu : Title
 Magenta : Main
 Violet sous Magenta : DropCapital
 Violet : Figure
 Vert : Stamp","Est-ce que l’on doit indiquer la présence d’un tampon quand il est visible, mais qu’il a été apposé de au recto de la page ?",None,None
-10,page_titre_Moliere_Escole_des_Maris_1661.png,,"Bleu : Title
+10,page_titre_Moliere_Escole_des_Maris_1661.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/page_titre_Moliere_Escole_des_Maris_1661.png,"Bleu : Title
 Bleu : Decoration
 Magenta : Main
 Vert : Stamp","Est-ce que les zones decoration, stamp et main peuvent se chevaucher ?",None,None
-11,page_titre_catalogue_lettres_autographes_1845.png,,"Violet : Title
+11,page_titre_catalogue_lettres_autographes_1845.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/page_titre_catalogue_lettres_autographes_1845.png,"Violet : Title
 Vert : Main",est-ce que toute cette page peut être considérée comme du titre?,None,None
-12,page_ordre_vacation_catalogue_lettres_autographes_1845.png,,"Vert : Main
+12,page_ordre_vacation_catalogue_lettres_autographes_1845.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/page_ordre_vacation_catalogue_lettres_autographes_1845.png,"Vert : Main
 Fuschia : Stamp",est-ce que une zone stamp peut recouvrir une zone main?,None,None
-13,page_1_catalogue_lettres_autographes_1845.png,,"Violet : Title 
+13,page_1_catalogue_lettres_autographes_1845.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/page_1_catalogue_lettres_autographes_1845.png,"Violet : Title 
 Vert : Entry
 Bleu : Main",et est-ce que il est judicieux de créer une zone pour les entrées de dictionnaires de ce type,None,None
-14,part_page_ acteurs_prologue_Boyer_Meduse_1697.png,,"Bleu : Title
+14,part_page_ acteurs_prologue_Boyer_Meduse_1697.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/part_page_%20acteurs_prologue_Boyer_Meduse_1697.png,"Bleu : Title
 Violet : DropCapital
 Fuschia : Main",Est-ce que l’ajout du T dans la transcription est une bonne idée ? Est-ce que ça risque de compliquer les choses ?,None,None
-15,part_page_acteurs_Boyer_Meduse_1697.png,,"Violet : DropCapital
+15,part_page_acteurs_Boyer_Meduse_1697.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/part_page_acteurs_Boyer_Meduse_1697.png,"Violet : DropCapital
 Fuschia : Main","Est-ce que la caractérisation en zone ""Figure"" de cette accolade est intéressante ? Je la verrais mal dans Decoration",None,None
-16,part_page_11_Boyer_Meduse_1697.png,,"Violet : DropCapital
+16,part_page_11_Boyer_Meduse_1697.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/part_page_%2011_Boyer_Meduse_1697.png,"Violet : DropCapital
 Fuschia : Main","Est-ce que cette initiale doit être traitée comme une lettre normale (comme c’est le cas ici), c’est à dire, mise sur la même ligne que ce qui vient après elle, ou doit être traitée comme étant sur une ligne à part entière ?",None,Doit être traitée comme étant sur une ligne à part entière
-17,part_page_11_Boyer_Meduse_1697.png,,"Violet : DropCapital
+17,part_page_11_Boyer_Meduse_1697.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/part_page_%2011_Boyer_Meduse_1697.png,"Violet : DropCapital
 Fuschia : Main",Est-ce que cette initiale doit être zonée en DropCapital ?,None,Doit être zonée en DropCapital
 18,,,,,,
 19,,,,,,
