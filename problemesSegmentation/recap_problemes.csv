@@ -2,7 +2,8 @@ Id,Nom de fichier,Lien vers l’image dans le GitHub,Couleurs : zones,Problème
 1,page_titre_Boyer_Meduse_1697.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/page_titre_Boyer_Meduse_1697.png,"Bleu : Title
 Magenta : Main
 Vert : Stamp
-Bleu ciel : Decoration",Est-ce que toute la page est une zone title?,None,None
+Bleu ciel : Decoration"
+,Est-ce que toute la page est une zone title?,None,None
 2,page_prologue_Boyer_Meduse_1697.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Probl%C3%A8mes-segmentation/problemesSegmentation/img/page_prologue_Boyer_Meduse_1697.png,"Orange : Numbering
 Violet : Figure
 Bleu : Title
