@@ -80,5 +80,8 @@ Fuschia : Main",Quel type de ligne devrait-on mettre là ?,J'ai pour l'instant 
 23,page_IX_Corneille_Théâtre_P_Corneille_1661.png,https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/ajout_pb_seg/problemesSegmentation/img/page_IX_Corneille_Th%C3%A9%C3%A2tre_P_Corneille_1661.png,"Jaune : RunningTitle
 Orange : Numbering
 Fuschia : Main
-Vert : Signatures",En bas à gauche se trouve un rappel (très épisodique dans le reste de l'ouvrage) que cet ouvrage appartient au Tome 1. De plus il semble associé à la signature (en vert). Je ne sais donc pas comment le caractériser : en RunningTitle (ce que j'ai fait ici, en jaune), en signature, ou bien en margin (reste la solution la moins efficace à mon avis) ? J'ai une préférence pour RunningTitle,None,RunningTitle est à utiliser dans ce genre de cas
-24,,,,,,
+Vert : Signatures",En bas à gauche se trouve un rappel (très épisodique dans le reste de l'ouvrage) que cet ouvrage appartient au Tome 1. De plus il semble associé à la signature (en vert). Je ne sais donc pas comment le caractériser : en RunningTitle (ce que j'ai fait ici, en jaune) en signature ou bien en margin (reste la solution la moins efficace à mon avis) ? J'ai une préférence pour RunningTitle,None,RunningTitle est à utiliser dans ce genre de cas
+24,page_12_Descartes_Discours_Methode_1637.png,,"Jaune : RunningTitle
+Orange : Numbering
+Fuschia : Main",j'ai un titre courant dans la marge. Je l'ai pour l'instant mis dans une zone RunningTitle (jaune) mais je suis un peu sceptique qu'un modèle puisse faire la différence avec la zone Margin. D'autant qu'il semble que je n'ai que deux exemples pour ce cas et beaucoup plus pour des marges "normales". Est-ce qu'il y a d'autres exemples de ce genre que je pourrais récupérer pour les ajouter dans le modèle ? Ou alors serait-il mieux de simplifier et de mettre ce titre dans la zone Margin pour faciliter le travail lors de l'entrainement ?,None,None
+25,,,,,,
