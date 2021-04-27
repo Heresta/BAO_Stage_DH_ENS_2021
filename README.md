@@ -32,6 +32,8 @@ _Créé et complété par [@Heresta](http://github.com/Heresta) et [@Juliettejns
 ### Fichier Python - creationCSVDataset.py
 Ce fichier est un petit script qui permet de récupérer directement les noms des fichiers dans d'un dossier de dataset dans un fichier csv.
 
+_Attention à bien modifier les chemins indiqués dans le document!_
+
 [Lien vers le fichier ``creationCSVDataset.py``](https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/main/creationCSVDataset.py)
 
 _Créé par [@Juliettejns](http://github.com/Juliettejns)_
