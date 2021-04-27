@@ -12,13 +12,13 @@ import errno
 
 # dossier avec les png du dataset
 # attention à bien mettre un / après le nom du dossier
-dossier_png = "/home/tnah/Documents/Stage/training_escriptorium/training_segmenter/2.0 evaluation set/png/"
+dossier_png = "./2.0 evaluation set/png/"
 # dossier avec toutes les pages xml confondues
 # attention à bien mettre un / après le nom du dossier
-dossier_page_xml = "/home/tnah/Documents/Stage/training_escriptorium/training_segmenter/toutes_pages_xml/"
+dossier_page_xml = "./toutes_pages_xml/"
 # dossier où se retrouveront les page-xml correspondant aux png
 # attention à bien mettre un / après le nom du dossier
-dossier_resultat = "/home/tnah/Documents/Stage/training_escriptorium/training_segmenter/2.0 evaluation set/PAGE_XML/"
+dossier_resultat = "./2.0 evaluation set/PAGE_XML/"
 
 # vérification du dossier de résultat + si non existence, création
 if not os.path.exists(os.path.dirname(dossier_resultat)):
@@ -32,11 +32,11 @@ liste_fichier_png = []
 
 liste_fichier_page_xml = []
 
-# remplissage de la liste d'images
+# remplissage de la liste d'images en retirant le format
 for fichier in os.listdir(dossier_png):
     liste_fichier_png.append(fichier[:-4])
 
-# remplissage de la liste de tous les fichires page-xml
+# remplissage de la liste de tous les fichiers page-xml en retirant le format
 for fichier in os.listdir(dossier_page_xml):
     liste_fichier_page_xml.append(fichier[:-4])
 
