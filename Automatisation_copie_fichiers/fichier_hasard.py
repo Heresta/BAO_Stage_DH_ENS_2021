@@ -11,7 +11,10 @@ import os
 import numpy
 
 # dossier avec les png du dataset
+# attention à bien mettre un / après le nom du dossier
 dossier_png = "./png/"
+# dossier où se retrouveront les images correspondant à la liste
+# attention à bien mettre un / après le nom du dossier
 dossier_resultat = "./nouveau_png/"
 
 # vérification du dossier de résultat + si non existence, création
