@@ -2,6 +2,13 @@
 Cette boite à outils a été créée dans l'optique de donner accès à tous aux outils que nous avons conçus dans le cadre de notre stage à l'ENS de Paris.
 
 ## Sommaire
+### Dossier - Automatisation_copie_fichiers
+Ce dossier contient plusieurs scripts Python qui ont pour but d'automatiser la création et le remplissage de dossiers de dataset. [En savoir plus (README)](https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/Automatisation_copie_fichiers/main/README.md)
+
+[Lien vers le dossier ``Automatisation_copie_fichiers``](https://github.com/Heresta/BAO_Stage_DH_ENS_2021/tree/main/Automatisation_copie_fichiers)
+
+_Créé par [@Heresta](http://github.com/Heresta)_
+
 ### Dossier - CorrectionPageXMLeScriptorium
 Ce dossier contient un script Python ainsi qu'une feuille de transformation xsl qui ont pour but de normaliser des fichiers PAGE-XML afin de pouvoir les utiliser sans soucis dans l'application eScriptorium. [En savoir plus (README)](https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/main/CorrectionPageXMLeScriptorium/README.md)
 
