@@ -16,6 +16,13 @@ Ce dossier contient un script Python ainsi qu'une feuille de transformation xsl 
 
 _Créé par [@Heresta](http://github.com/Heresta) et [@Juliettejns](http://github.com/Juliettejns)_
 
+### Dossier - RetraitTranscriptionPAGEXML
+Ce dossier contient un script Python ainsi qu'une feuille de transformation xsl qui ont pour but de partir d'un fichier xml sortant d'eScriptorium pour en enlever les transcriptions et en faire un simple fichier de segmentation. Cela a pour but d'aider les tests sur les modèles de recognizer d'eScriptorium tant que l'on n'a pas de modèle de segmentation qui fonctionne. [En savoir plus (README)](https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/main/RetraitTranscriptionPAGEXML/README.md)
+
+[Lien vers le dossier ``RetraitTranscriptionPAGEXML``](https://github.com/Heresta/BAO_Stage_DH_ENS_2021/tree/main/RetraitTranscriptionPAGEXML)
+
+_Créé par [@Heresta](http://github.com/Heresta)_
+
 ### Dossier - documentationFormatsExistants
 Ce dossier contient quatre fichiers xml commentés en français en fonction de leur documentation, de notre utilisation et de notre compréhension. Ils présentent plusieurs formats : 
 - ALTO
