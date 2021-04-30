@@ -1,5 +1,8 @@
 # Correction de fichier PAGE-XML pour eScriptorium
 
+## Mise en garde
+Attention ! Pour que cela fonctionne correctement, il faut s'assurer que les namespaces qui se trouvent dans le fichier xsl correspondent à ceux qui sont dans les fichiers xml à transformer !
+
 ## Les fichiers
 Dans ce dossier, vous pourrez trouver 4 fichiers. 
 
