@@ -4,6 +4,7 @@ import click
 import re
 from lxml import etree as ET
 import errno
+import shutil
 
 def transformation_automatique(chemin, dossier_resultat):
     """
