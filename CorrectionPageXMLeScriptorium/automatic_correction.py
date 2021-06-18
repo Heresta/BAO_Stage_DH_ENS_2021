@@ -33,6 +33,10 @@ def transformation_automatique(chemin, dossier_resultat):
         #on créé un nouveau fichier dans le dossier résultat
         with open(dossier_resultat+fichier, mode='wb') as f:
             f.write(propre)
+    
+    option = input("Voulez-vous compresser le fichier obtenu ? (o/n) ")
+    if option == "o":
+        shutil.make_archive(dossier_resultat, 'zip', dossier_resultat)
 
 # récupérer le dossier à transformer et le dossier résultat
 chemin_input = input("entrez le chemin du dossier: ")
