@@ -23,6 +23,14 @@ Ce dossier contient un script Python ainsi qu'une feuille de transformation xsl 
 
 _Créé par [@Heresta](http://github.com/Heresta)_
 
+### Dossier - division_lines_zones
+
+Ce dossier contient trois programmes CLI python qui permettent de récupérer des statistiques de quantités de type de zones et de lignes dans un fichier ALTO4.
+Attention ! A noter que ces programmes sont à adapter si le vocabulaire utilisé n'est pas celui de [SegmOnto](https://github.com/SegmOnto).
+[En savoir plus (README)](https://github.com/Heresta/BAO_Stage_DH_ENS_2021/blob/main/division_lines_zones/README.md)
+
+_Créé par [Heresta](http://github.com/Heresta)_
+
 ### Dossier - documentationFormatsExistants
 Ce dossier contient quatre fichiers xml commentés en français en fonction de leur documentation, de notre utilisation et de notre compréhension. Ils présentent plusieurs formats : 
 - ALTO
