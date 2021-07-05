@@ -1,11 +1,19 @@
 from lxml import etree as ET
 import click
 import os
+import errno
 
 
 @click.command("calcul")
 @click.argument("dossier")
-def calcul(dossier):
+@click.argument("fin_chemin")
+def calcul(dossier, fin_chemin):
+    if not os.path.exists(os.path.dirname("./results/")):
+        try:
+            os.makedirs(os.path.dirname("./results/"))
+        except OSError as exc:  # Guard against race condition
+            if exc.errno != errno.EEXIST:
+                raise
     tag_label = {"textblock": [["BT1", "Title", "block type Title"],
                                ["BT2", "Main", "block type Main"],
                                ["BT3", "Damage", "block type Damage"],
@@ -33,16 +41,10 @@ def calcul(dossier):
 
     fichier_final_nom = "datasetsOCRSegmenter17"
     for directory in os.listdir(dossier):
-        """zone = {"Title": 0, "Main": 0, "Damage": 0, "Decoration": 0, "DropCapital": 0, "Figure": 0, "Margin": 0,
-                "Numbering": 0, "MusicNotation": 0, "RunningTitle": 0, "Seal": 0, "Signatures": 0, "Stamp": 0,
-                "Table": 0}
-        line = {"Default": 0, "DropCapitalLine": 0, "Interlinear": 0, "MusicLine": 0, "Rubric": 0}"""
-        """fichier_final_nom = directory"""
-        for fichier in os.listdir(dossier + directory + '/alto4eScriptorium/'):
-            file = ET.parse(dossier + directory + '/alto4eScriptorium/' + fichier)
+        for fichier in os.listdir(dossier + directory + fin_chemin):
+            file = ET.parse(dossier + directory + fin_chemin + fichier)
             root = file.getroot()
             layout = root[2]
-            tag = ""
             for page in layout:
                 for printspace in page:
                     for textblock in printspace:
@@ -57,7 +59,7 @@ def calcul(dossier):
                                     if textline.get("TAGREFS") == item.get("ID"):
                                         for re in tag_label["textline"]:
                                             if re[1] == item.get("LABEL"):
-                                                zone[tag][re[1]] += 1
+                                                line[item.get("LABEL")] += 1
 
     zone_final = {}
     line_final = {}
@@ -68,7 +70,7 @@ def calcul(dossier):
         if value != 0:
             line_final[item] = value
 
-    with open("./results/" + fichier_final_nom + '.md', 'w') as f:
+    with open("./results/" + fichier_final_nom + '.txt', 'w') as f:
         zones = zone_final.values()
         lines = line_final.values()
         total_zone = 0

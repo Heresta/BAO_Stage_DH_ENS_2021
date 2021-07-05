@@ -1,11 +1,19 @@
 from lxml import etree as ET
 import click
 import os
+import errno
 
 
 @click.command("calcul")
 @click.argument("dossier")
-def calcul(dossier):
+@click.argument("fin_chemin")
+def calcul(dossier, fin_chemin):
+    if not os.path.exists(os.path.dirname("./results/")):
+        try:
+            os.makedirs(os.path.dirname("./results/"))
+        except OSError as exc:  # Guard against race condition
+            if exc.errno != errno.EEXIST:
+                raise
     tag_label = {"textblock": [["BT1", "Title", "block type Title"],
                                ["BT2", "Main", "block type Main"],
                                ["BT3", "Damage", "block type Damage"],
@@ -41,8 +49,8 @@ def calcul(dossier):
             "Table": {"Default": 0, "DropCapitalLine": 0, "Interlinear": 0, "MusicLine": 0, "Rubric": 0}}
     fichier_final_nom = "datasetsOCRSegmenter17SUPPL"
     for directory in os.listdir(dossier):
-        for fichier in os.listdir(dossier + directory + '/alto4eScriptorium/'):
-            file = ET.parse(dossier + directory + '/alto4eScriptorium/' + fichier)
+        for fichier in os.listdir(dossier + directory + fin_chemin):
+            file = ET.parse(dossier + directory + fin_chemin + fichier)
             root = file.getroot()
             layout = root[2]
             tag = ""
@@ -61,7 +69,7 @@ def calcul(dossier):
                                         for re in tag_label["textline"]:
                                             if re[1] == item.get("LABEL"):
                                                 zone[tag][re[1]] += 1
-    with open("./results/" + fichier_final_nom + '.md', 'w') as f:
+    with open("./results/" + fichier_final_nom + '.txt', 'w') as f:
         f.writelines("## About files' segmentation\n\n")
         f.writelines("### About zones:\n\n")
         for nom, valeur in zone.items():
