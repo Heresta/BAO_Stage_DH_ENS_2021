@@ -59,7 +59,7 @@
             </xsl:attribute>
             <xsl:attribute name="custom">
                 <!--Ajout pour toutes les lignes de la valeur default d'après l'ontologie SegmOnto-->
-                <xsl:text>structure {type:default;} </xsl:text>
+                <xsl:text>structure {type:Default;} </xsl:text>
                 <xsl:value-of select="@custom"/>
             </xsl:attribute>
             <xsl:copy-of select="pr:Coords"/>
